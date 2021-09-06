@@ -33,9 +33,9 @@
         <action android:id="@+id/action_detailsFragment_to_home" app:destination="@id/home"/>
     </fragment>
     <fragment android:id="@+id/successFragment" android:name="com.example.watchstoreapp.fragments.SuccessFragment"
-              android:label="fragment_success" tools:layout="@layout/fragment_success">
+              android:label="Payment Successful" tools:layout="@layout/fragment_success">
         <action android:id="@+id/action_successFragment_to_home" app:destination="@id/home"/>
     </fragment>
     <fragment android:id="@+id/search" android:name="com.example.watchstoreapp.fragments.SearchFragment"
-              android:label="fragment_search" tools:layout="@layout/fragment_search"/>
+              android:label="Search" tools:layout="@layout/fragment_search"/>
 </navigation>
