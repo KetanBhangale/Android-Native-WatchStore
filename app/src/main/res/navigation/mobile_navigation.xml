@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/mobile_navigation"
+            app:startDestination="@+id/home">
+
+    <fragment
+            android:id="@+id/home"
+            android:name="com.example.watchstoreapp.fragments.HomeFragment"
+            android:label="@string/watchStore"
+            tools:layout="@layout/fragment_home">
+        <action android:id="@+id/action_home_to_detailsFragment" app:destination="@id/detailsFragment"/>
+    </fragment>
+
+    <fragment
+            android:id="@+id/profile"
+            android:name="com.example.watchstoreapp.fragments.ProfileFragment"
+            android:label="Profile"
+            tools:layout="@layout/fragment_profile"/>
+
+    <fragment
+            android:id="@+id/cart"
+            android:name="com.example.watchstoreapp.fragments.CartFragment"
+            android:label="Cart"
+            tools:layout="@layout/fragment_cart">
+        <action android:id="@+id/action_cart_to_successFragment" app:destination="@id/successFragment"/>
+    </fragment>
+
+    <fragment android:id="@+id/detailsFragment" android:name="com.example.watchstoreapp.fragments.DetailsFragment"
+              android:label="Product Details" tools:layout="@layout/fragment_details">
+        <argument android:name="productDetails" app:argType="com.example.watchstoreapp.model.ProductItem"/>
+        <action android:id="@+id/action_detailsFragment_to_home" app:destination="@id/home"/>
+    </fragment>
+    <fragment android:id="@+id/successFragment" android:name="com.example.watchstoreapp.fragments.SuccessFragment"
+              android:label="fragment_success" tools:layout="@layout/fragment_success">
+        <action android:id="@+id/action_successFragment_to_home" app:destination="@id/home"/>
+    </fragment>
+    <fragment android:id="@+id/search" android:name="com.example.watchstoreapp.fragments.SearchFragment"
+              android:label="fragment_search" tools:layout="@layout/fragment_search"/>
+</navigation>

@@ -1,0 +1,47 @@
+  {
+  "project_info": {
+    "project_number": "295437616195",
+    "project_id": "watchstore-9974c",
+    "storage_bucket": "watchstore-9974c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:295437616195:android:7832f6d8bddc2df88240f6",
+        "android_client_info": {
+          "package_name": "com.example.watchstoreapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "295437616195-91ur57gmgf2mbqe43tps1nf4p735avd6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.watchstoreapp",
+            "certificate_hash": "2153185405e39f989080921f3e37a92caaf6b345"
+          }
+        },
+        {
+          "client_id": "295437616195-mbeek5cpnogsu94s6gc3dftmr6hnccv0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-MyhIW5jZDRj273F7edFJVCILEQDyRXs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "295437616195-mbeek5cpnogsu94s6gc3dftmr6hnccv0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

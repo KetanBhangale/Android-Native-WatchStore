@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context=".fragments.HomeFragment">
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp">
+
+        <TextView
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="@string/checkout_exclusive_watches_from_top_brand"
+                android:textSize="@dimen/_22ssp"
+                android:fontFamily="@font/montserrat_bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+        />
+        <LinearLayout
+                android:id="@+id/ll1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/header"
+                android:background="@drawable/rounded_pink_shape"
+                android:padding="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal"
+
+        >
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+            >
+                <TextView
+                        android:id="@+id/offerPercentage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="40% OFF"
+                        android:textColor="@color/secondary_text"
+                        android:background="@drawable/rounded_white_shape"
+                        android:textSize="@dimen/_22ssp"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:textStyle="bold"
+                        android:padding="@dimen/_10sdp"/>
+                <TextView
+                        android:id="@+id/offerName"
+                        android:layout_width="@dimen/_170sdp"
+                        android:layout_height="wrap_content"
+                        android:text="Golden Watch with Great Discount"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_16ssp"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:paddingTop="@dimen/_10sdp"
+                        android:paddingBottom="@dimen/_10sdp"
+                        android:ellipsize="none"
+                        android:maxLines="2"
+                />
+                <TextView
+                        android:id="@+id/offerButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/get_now"
+                        android:textColor="@color/white"
+                        android:background="@drawable/rounded_dark_pink_shape"
+                        android:textSize="@dimen/_18ssp"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:textStyle="bold"
+                        android:padding="@dimen/_10sdp"/>
+            </LinearLayout>
+            <ImageView
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_150sdp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:src="@drawable/offer"
+                    android:scaleType="centerCrop"
+            />
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/category_rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:listitem="@layout/category_item"
+                android:layout_marginTop="@dimen/_10sdp"
+                tools:itemCount="1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ll1"
+                app:layout_constraintRight_toRightOf="parent"
+        />
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/productList_rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:listitem="@layout/product_item"
+                android:layout_marginTop="@dimen/_10sdp"
+                tools:itemCount="1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/category_rv"
+                app:layout_constraintRight_toRightOf="parent"
+
+        />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
